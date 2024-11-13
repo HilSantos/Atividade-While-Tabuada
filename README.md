@@ -13,22 +13,19 @@ namespace Ativ.WhileTabuada
     {
         static void Main(string[] args)
         {
-           
-  Console.Write("Digite o Número para Obter a Taboada : ");
-            int numero = Int32.Parse(Console.ReadLine());
+            Console.Write("Digite um número para ver sua tabuada: ");
+            int numero = int.Parse(Console.ReadLine());
             int multiplicador = 1;
 
-  while (multiplicador <=10)
+while (multiplicador <= 10)
             {
                 int resultado = numero * multiplicador;
-                Console.WriteLine($"{numero}*{multiplicador}={resultado}");
+                Console.WriteLine($"{numero} x {multiplicador} = {resultado}");
                 multiplicador++;
             }
 
-  Console.ReadKey();
-
-  }
-
-        
-  }
-}
+Console.ReadKey();
+        }
+    }
+}           
+  
